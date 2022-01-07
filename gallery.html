@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+Template Name: Foxclore
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>TFG_MGP/BBDD</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{{url_for('static', filename='css/layout.css')}}" rel="stylesheet" type="text/css" media="all">
+
+<link href="{{url_for('static', filename='css/style_buttom.css')}}">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('static/img/bim-360.jpg');"> 
+  <!-- ################################################################################################ -->
+  <img class="imgl" src="{{ url_for('static', filename='img/logo uma.png')}}" >
+  <img class="imgl" src="{{ url_for('static', filename='img/Logo_eii.png')}}" >
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <section id="navwrapper" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    
+  </section>
+  <!-- Indice hacia atrás-->
+  <div id="breadcrumb" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <h6 class="heading">Navegador</h6>
+    <ul>
+      <li><a href="/">Inicio</a></li>
+      <li><a href="#">Base de datos</a></li>
+      
+    </ul>
+    <!-- ################################################################################################ -->
+  </div>
+  <!-- ################################################################################################ -->
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content"> 
+      <!-- ################################################################################################ -->
+      <div id="gallery">
+        <figure>
+          <header class="heading">BASE DE DATOS</header>
+
+          {% for unidad in unidades %}
+          <ul class="nospace clear">
+            
+            <li class="imgl"><a href="/elementobim.html/{{unidad.0}}"><img  src="{{ url_for('static', filename='img/revit/{{unidad.1}}.jpg')}}" alt=""></a><h2>{{unidad.2}}</h2></li>
+
+            {% endfor %}
+            <li class="one_quarter first"><a href="elmento_bim.html"><img src="/revit/310516(1).jpg" alt=""></a><h2>Grava colocada en base de banqueta de cimentación de cajones</h2></li>
+            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
+       
+          </ul>
+          <figcaption>Gallery Description Goes Here</figcaption>
+        </figure>
+      </div>
+      <!-- ################################################################################################ -->
+      <!-- ################################################################################################ -->
+      <nav class="pagination">
+        <ul>
+          <li><a href="#">&laquo; Previous</a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><strong>&hellip;</strong></li>
+          <li><a href="#">6</a></li>
+          <li class="current"><strong>7</strong></li>
+          <li><a href="#">8</a></li>
+          <li><a href="#">9</a></li>
+          <li><strong>&hellip;</strong></li>
+          <li><a href="#">14</a></li>
+          <li><a href="#">15</a></li>
+          <li><a href="#">Next &raquo;</a></li>
+        </ul>
+      </nav>
+      <!-- ################################################################################################ -->
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="bgded overlay row4" style="background-image:url('../images/demo/backgrounds/01.png');">
+  <footer id="footer" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+  
+  
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script type="text/javascript" src="{{ url_for('static' , filename='js/jquery.min.js')}}"></script>
+<script type="text/javascript" src="{{ url_for('static' , filename='js/jquery.backtotop.js')}}"></script>
+<script type="text/javascript" src="{{ url_for('static' , filename='js/jquery.mobilemenu.js')}}"></script>
+
+</body>
+</html>
